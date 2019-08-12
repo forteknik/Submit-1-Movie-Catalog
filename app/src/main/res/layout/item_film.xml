@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+
+    >
+
+    <ImageView
+        android:id="@+id/img_film"
+        android:layout_width="110dp"
+        android:layout_height="135dp"/>
+
+    <TextView
+        android:id="@+id/tv_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/img_film"
+        android:text="@string/judul_film"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/tv_tgl_rilis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_judul"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/img_film"
+        android:text="@string/rilis"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/tv_deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tgl_rilis"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/img_film"
+        android:maxLines="3"
+        android:text="@string/deskripsi" />
+
+</RelativeLayout>

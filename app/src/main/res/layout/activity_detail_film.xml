@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DetailFilm"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:id="@+id/img_film"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:layout_marginVertical="@dimen/marginVertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_judul"
+            android:text="@string/judul_film"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24dp"
+            android:layout_toEndOf="@+id/img_film"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:layout_marginVertical="@dimen/marginVertical"/>/>
+        <TextView
+            android:id="@+id/ket_rilis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tangal Rilis: "
+            android:layout_toEndOf="@+id/img_film"
+            android:layout_below="@+id/tv_judul"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="@dimen/marginVertical"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ket_rilis"
+            android:layout_toEndOf="@+id/img_film"
+            android:text="Tanggal"
+            android:id="@+id/tv_tgl_rilis"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"/>
+        <Button
+            android:id="@+id/btn_tonton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tonton"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
+            android:layout_toEndOf="@+id/img_film"
+            android:layout_below="@+id/tv_tgl_rilis"
+            android:layout_marginTop="80dp"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:layout_marginVertical="@dimen/marginVertical"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginVertical="@dimen/marginVertical"
+        android:layout_marginHorizontal="@dimen/marginHorizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Overview"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            android:id="@+id/ket_overview"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_deskripsi"
+            android:layout_below="@+id/ket_overview"
+            android:textColor="@color/colorWhite"
+            android:text="Deskripsi Lengkap"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:layout_marginVertical="@dimen/marginVertical"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
